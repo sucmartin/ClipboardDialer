@@ -1,0 +1,34 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DialogApp.MainPage">
+
+    <StackLayout Margin="25,50">
+        
+        <Label
+            Text="Vítejte v první aplikaci!"
+            FontSize="Large" 
+            TextColor="#666666"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center" Margin="0,20,0,0"
+        />
+        <Entry
+            x:Name="osloveniEntry"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Center"
+            Margin="20,20"
+            MaxLength="255"
+            Placeholder="Zadejte oslovení"
+        />
+        <Button
+            x:Name="button"
+            Text="Pozdravit!"
+            Margin="20,10"
+            BackgroundColor="#26940F"
+            TextColor="#FFFFFF"
+            Clicked="Button_Clicked"
+        />
+
+    </StackLayout>
+
+</ContentPage>
